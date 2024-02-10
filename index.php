@@ -1,5 +1,5 @@
 <?php
-echo('Nkunim is here')
+echo('Nkunim is here');
                 error_reporting(E_ALL);
                 ini_set('display_errors', 1);
 
