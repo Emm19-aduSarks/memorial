@@ -110,61 +110,35 @@
       </header>
 
       <!-- Slider #1 ============================================= -->
-      <section id="hero" class="section hero">
-        <div class="bg-section">
-          <img src="IMAGES/mainBg.png" alt="background">
+     <section id="hero" class="section hero">
+  <div class="bg-section">
+    <img src="IMAGES/mainBg.png" alt="background">
+  </div>
+  <div class="container">
+    <div class="row row-content">
+      <div class="col-12 col-md-6 col-lg-6">
+        <div class="hero-headline" style="color: white; font-family: 'Great Vibes', cursive;">
+          In Loving Memory of Mrs Esther Kwatetso Apaloo,<br>
+          Our<br>
+          <span class="typed-text" id="typedText" data-typed-string="Mother,Role Model,Guide"></span>
         </div>
-        <div class="container">
-          <div class="row row-content">
-            <div class="col-12 col-md-6 col-lg-6">
-              <div class="hero-headline" style="color: white; font-family: 'Great Vibes', cursive;">In Loving Memory of Mrs Esther Kwatetso Apaloo,
-                <br>
-                Our
-                <span class="typed-text" id="typedText" data-typed-string="Mother,Role Model,Guide"></span></div>
-
-              <div class="hero-bio" style="color: white;">Forever in Our Hearts (1935-2024)</div>
- 
-              <div class="hero-action">
-                <form class="form-inline mb-0 mailchimp" novalidate="true">
-                  <input type="email" class="form-control" placeholder="Enter your e-mail">
-                  <input type="submit" value="Get Started" class="btn btn--primary">
-                </form>
-             
-                <div class="subscribe-alert"></div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-6"></div>
-          </div>
-          <!-- .row end -->
-         
+        <div class="hero-bio" style="color: white;">Forever in Our Hearts (1935-2024)</div>
+        <div class="hero-action">
+          <form class="form-inline mb-0 mailchimp" novalidate="true">
+            <input type="email" class="form-control" placeholder="Enter your e-mail">
+            <input type="submit" value="Get Started" class="btn btn--primary">
+          </form>
+          <div class="subscribe-alert"></div>
         </div>
-        <!-- .container end -->
-<img style="width: 70px; position: fixed; bottom: 20px; right: 20px; z-index:100; cursor:pointer;" class="help_ambulance" id="help_ambulance" src="IMAGES/crossFuneral.svg">
-
-<script>
-// Add event listener to the image element
-document.getElementById('help_ambulance').addEventListener('click', function() {
-    // Redirect to the "program.html" page
-    window.location.href = 'program.html';
-});
-</script>
-
-
-<script>
-        // Add event listener for the DOMContentLoaded event
-        document.addEventListener('DOMContentLoaded', function() {
-            // Start the bouncing animation when the document is ready
-            document.getElementById('help_ambulance').classList.add('bouncing');
-        });
-
-        // Add click event listener to toggle bouncing animation on click
-        document.getElementById('help_ambulance').addEventListener('click', function() {
-            // Toggle the 'bouncing' class to start or stop the animation
-            this.classList.toggle('bouncing');
-        });
-</script>
-
+      </div>
+      <div class="col-12 col-md-6 col-lg-6"></div>
+    </div>
+    <!-- .row end -->
+  </div>
+  <!-- .container end -->
+  <img style="width: 70px; position: fixed; bottom: 20px; right: 20px; z-index:100; cursor:pointer;" class="help_ambulance" id="help_ambulance" src="IMAGES/crossFuneral.svg">
 </section>
+
 
       <!-- #slider end -->
       <!-- Feature #1 ============================================= -->
@@ -491,8 +465,29 @@ The God you served so well will look after you. </div>
             iconColor: '#E74D7B' 
         });
     });
+</script>
 
-    
+<script>
+// Add event listener to the image element
+document.getElementById('help_ambulance').addEventListener('click', function() {
+    // Redirect to the "program.html" page
+    window.location.href = 'program.html';
+});
+</script>
+
+
+<script>
+        // Add event listener for the DOMContentLoaded event
+        document.addEventListener('DOMContentLoaded', function() {
+            // Start the bouncing animation when the document is ready
+            document.getElementById('help_ambulance').classList.add('bouncing');
+        });
+
+        // Add click event listener to toggle bouncing animation on click
+        document.getElementById('help_ambulance').addEventListener('click', function() {
+            // Toggle the 'bouncing' class to start or stop the animation
+            this.classList.toggle('bouncing');
+        });
 </script>
    
   </body>
