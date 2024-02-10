@@ -223,58 +223,47 @@ The God you served so well will look after you. </div>
 
 
       <!-- #feature2 end -->
-
-      <!-- Testimonial ============================================= -->
-      <section id="patients" class="section testimonials bg-gray">
-        <div class="container">
-          <div class="row clearfix">
-            <div class="col-12 col-md-12 col-lg-12">
-              <div class="heading heading-1 text-center">
-                <h2 class="heading-title">Tributes <img style="height:90px;margin-top:-20px;" src="IMAGES/tributeImage.png"></h2>
-              </div>
-            </div>
-            <!-- .col-md-6 end -->
-          </div>
-          <!-- .row end -->
-         
-
-        <?php
-        foreach($tributes as $tribute):
-        ?>
-           
-          <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-              <div style="margin-bottom:12px;;" class="carousel carousel-dots owl-carousel" data-slide="1" data-slide-rs="1" data-autoplay="true" data-nav="false" data-dots="true" data-space="30" data-loop="true" data-speed="800">
-
-                <!-- Testimonial #1 -->
-              
-                <div class="testimonial-panel" id="testimonialPanel">
-                    <div class="testimonial-body">
-
-
-                      <p><?php echo $tribute["Message"];?></p>
-
-                      <div class="testimonial-author">
-                        <h5><?php echo $tribute["Name"];?></h5>
-                      </div>
-
-                    
-                    </div>
-
-
-                  </div>
-              </div>
-            
-              <!-- .carousel End -->
-            </div>
-          </div>
-        <?php
-        endforeach;
-        ?>
-          <!-- .row End -->
+      
+<!-- Testimonial ============================================= -->
+<section id="patients" class="section testimonials bg-gray">
+  <div class="container">
+    <div class="row clearfix">
+      <div class="col-12 col-md-12 col-lg-12">
+        <div class="heading heading-1 text-center">
+          <h2 class="heading-title">Tributes <img style="height:90px;margin-top:-20px;" src="IMAGES/tributeImage.png"></h2>
         </div>
-        <!-- .container End -->
-      </section>
+      </div>
+    </div>
+    <?php
+    foreach($tributes as $tribute):
+    ?>
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+        <div style="margin-bottom:12px;" class="carousel carousel-dots owl-carousel" data-slide="1" data-slide-rs="1" data-autoplay="true" data-nav="false" data-dots="true" data-space="30" data-loop="true" data-speed="800">
+          <!-- Testimonial #1 -->
+          <div class="testimonial-panel" id="testimonialPanel">
+            <div class="testimonial-body">
+              <p><?php echo $tribute["Message"];?></p>
+              <div class="testimonial-author">
+                <h5><?php echo $tribute["Name"];?></h5>
+              </div>
+            </div>
+          </div>
+          <!-- .testimonial-panel End -->
+        </div>
+        <!-- .carousel End -->
+      </div>
+    </div>
+    <?php
+    endforeach;
+    ?>
+    <!-- .row End -->
+  </div>
+  <!-- .container End -->
+</section>
+     
+
+
 
 
       
