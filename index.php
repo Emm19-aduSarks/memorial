@@ -112,7 +112,7 @@
       <!-- Slider #1 ============================================= -->
      <section id="hero" class="section hero">
   <div class="bg-section">
-    <img src="IMAGES/mainBg.png" alt="background">
+    <img src="IMAGES/mainBg.png" alt="mainImage">
   </div>
   <div class="container">
     <div class="row row-content">
