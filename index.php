@@ -1,4 +1,5 @@
 <?php
+echo('Nkunim is here')
                 error_reporting(E_ALL);
                 ini_set('display_errors', 1);
 
@@ -41,8 +42,8 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins:400,400i,500,600,700' rel='stylesheet' type='text/css'>
 
     <!-- Stylesheets ============================================= -->
-    <link href="CSS/styleOne.css" rel="stylesheet">
-    <link href="CSS/styleTwo.css" rel="stylesheet">
+    <link href="/CSS/styleOne.css" rel="stylesheet">
+    <link href="/CSS/styleTwo.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
