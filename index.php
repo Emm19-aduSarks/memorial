@@ -41,8 +41,8 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins:400,400i,500,600,700' rel='stylesheet' type='text/css'>
 
     <!-- Stylesheets ============================================= -->
-    <link href="/CSS/styleOne.css" rel="stylesheet" type="text/css">
-    <link href="/CSS/styleTwo.css" rel="stylesheet" type="text/css">
+    <link href="CSS/styleOne.css" rel="stylesheet" type="text/css">
+    <link href="CSS/styleTwo.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -425,9 +425,9 @@ The God you served so well will look after you. </div>
 
 
     <!-- Footer Scripts ============================================= -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/functions.js"></script>
+    <script src="JS/jquery-3.3.1.min.js"></script>
+    <script src="JS/plugins.js"></script>
+    <script src="JS/functions.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-89540131-1"></script>
     <script>
