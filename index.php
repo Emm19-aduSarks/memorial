@@ -383,7 +383,7 @@ The God you served so well will look after you. </div>
                   <i style="color:#E74D7B" class="fa-solid fa-phone fa-xl"></i>
                   </div>
                   <h4>Phone</h4>
-                  <p>+223 24 699 5679</p>
+                  <p>+233</p>
                 </div>
                 <!-- .widget-info-box end -->
               </div>
@@ -394,7 +394,7 @@ The God you served so well will look after you. </div>
                   <i style="color:#E74D7B" class="fa-solid fa-map-location-dot fa-xl"></i>                 
                 </div>
                   <h4>Address</h4>
-                  <p>Independence Ave., Accra</p>
+                  <p>Ebenezer Presbyterian, Osu</p>
                 </div>
                 <!-- .widget-info-box end -->
               </div>
@@ -404,8 +404,8 @@ The God you served so well will look after you. </div>
                   <div class="info-img">
                   <i style="color:#E74D7B" class="fa-solid fa-clock fa-xl"></i>                  
                 </div>
-                  <h4>Opening Time</h4>
-                  <p>Mon-Fri 8:00 to 17:00</p>
+                  <h4> Time</h4>
+                  <p>Tuesday 11:00am</p>
                 </div>
                 <!-- .widget-info-box end -->
               </div>
@@ -432,7 +432,7 @@ The God you served so well will look after you. </div>
             <div class="row">
               <div class="col-12 col-md-6 col-lg-6">
                 <div class="footer-copyright">
-                  <span>&copy; Phrontlyne 2024, All Rights Reserved.</span>
+                  <span>&copy; Apaloo Family 2024, All Rights Reserved.</span>
                 </div>
               </div>
               <!-- .col-md-6 end -->
