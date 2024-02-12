@@ -467,9 +467,9 @@ The God you served so well will look after you. </div>
 
 
     <!-- Footer Scripts ============================================= -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/functions.js"></script>
+    <script src="JS/jquery-3.3.1.min.js"></script>
+    <script src="JS/plugins.js"></script>
+    <script src="JS/functions.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-89540131-1"></script>
     <script>
