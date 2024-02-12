@@ -44,6 +44,7 @@ custom.css and it will override the style in this file. You have been warned! :)
 body,
 html {
   overflow-x: hidden;
+  z-index: 0;
 }
 
 html {
@@ -2659,3 +2660,10 @@ li.open > a:focus {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+
+
+

@@ -1,0 +1,86 @@
+.entireModal {
+    width: 1000px !important;
+}
+
+.modalCard {
+    background-color: white;
+    height: 236px;
+    width: 308px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a nice shadow */
+    margin-left: 10px !important;    
+    overflow-x: scroll !important;
+    float: left;
+}
+
+
+.modalCard:hover * {
+    background-color: #E74D7B;
+    color: white !important;
+}
+
+.modalCard:hover{
+    background-color: #E74D7B;
+    color: white !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+
+.modalText {
+    font-size: 16px;
+    margin-top: 0px;
+}
+
+.modalText:hover {
+    color: white !important;
+}
+
+
+.iconCross{
+    margin-top: 50px !important;
+    color: #E74D7B;
+}
+
+
+.iconCross:hover{
+    margin-top: 50px !important;
+    color: #fff;
+}
+
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .entireModal {
+        overflow-x: scroll; /* Enable horizontal scrolling */
+        display: flex; /* Ensure flex layout */
+        justify-content: flex-start; /* Align items to the start */
+        align-items: stretch; /* Stretch items vertically */
+        margin-top: -70px; /* Move the entire modal section up */
+        margin-left: 0px !important;
+    }
+
+    .modalCard {
+        flex-shrink: 0; /* Prevent modal cards from shrinking */
+        margin-left: 10px; /* Adjust margin */
+    }
+
+    .modalText {
+        font-size: 15px !important;
+        margin-top: 15px !important;
+    }
+}
+
+
+.small_image{
+        margin-top:50px;
+        width: 100px; /* Adjust the width as needed */
+        height: 100px; /* Adjust the height as needed */
+        border-radius: 50%; /* Makes the image round */
+}
+
+#paginationDots span {
+    color: #E74D7B;
+}
