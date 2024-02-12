@@ -41,8 +41,10 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins:400,400i,500,600,700' rel='stylesheet' type='text/css'>
 
     <!-- Stylesheets ============================================= -->
-    <link href="CSS/styleOne.css" rel="stylesheet" type="text/css">
-    <link href="CSS/styleTwo.css" rel="stylesheet" type="text/css">
+    <link href="CSS/styleOne.css" rel="stylesheet">
+    <link href="CSS/styleTwo.css" rel="stylesheet">
+    <link href="CSS/modal.css" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -200,6 +202,45 @@ The God you served so well will look after you. </div>
         <div class="heading heading-1 text-center">
           <h2 class="heading-title">Tributes <img style="height:90px;margin-top:-20px;" src="IMAGES/tributeImage.png"></h2>
         </div>
+
+    <section  id="modalContainer" style="margin-top:-70px; margin-left:70px;" class="entireModal">
+        <div class="modalCard" onclick="openPDF('tributes/Tribute to Gran-Gram.pdf')">
+        <img class="small_image" src="IMAGES/grandchildrenMain.png" >
+            <p class="modalText" style="color:#E74D7B;"><br>Grandchildren</p>
+        </div>
+        <div class="modalCard"  onclick="openPDF('tributes/Auntie Otsoo_Tribute by Femi and Ranti.pdf')">
+        <img class="small_image" src="IMAGES/campbell.png" >
+            <p class="modalText" style="color:#E74D7B;"><br>Campbell Grandnieces</p>
+        </div>
+        <div class="modalCard" onclick="openPDF('tributes/MEMORIES OF MAMIE ESTHER.pdf')">
+        <img class="small_image" src="IMAGES/marie.png" >
+            <p class="modalText" style="color:#E74D7B;"><br><br>Marie O. Obumadjugo</p>
+        </div>
+
+
+        <div style="margin-top:20px;" class="modalCard" onclick="openPDF('tributes/Tribute Grandmamam (1).pdf')">
+        <img class="small_image" src="IMAGES/genevieve.png" >
+            <p class="modalText" style="color:#E74D7B;"><br><br>Genevieve Apaloo</p>
+        </div>
+        <div style="margin-top:20px;"  class="modalCard" onclick="openPDF('tributes/A TRIBUTE IN MEMORY OF ESTHER KWATETSO APALOO (1).pdf')">
+        <img class="small_image" src="IMAGES/rk.png" >
+            <p class="modalText" style="color:#E74D7B;"><br><br>R.K. Apaloo </p>
+        </div>
+        
+        <div style="margin-top:20px;"  class="modalCard" onclick="openPDF('tributes/FAREWELL AUNTIE ESTHER By Arafua Aning.pdf')">
+        <i class="fas fa-cross iconCross"></i>
+            <p class="modalText" style="color:#E74D7B;"><br><br>Arafua A. Aning</p>
+        </div>
+
+        <div style="margin-top:20px; margin-left:400px;" class="modalCard" onclick="openPDF('tributes/TRIBUTE BY THE ADU.pdf')">
+        <i class="fas fa-cross iconCross"></i>
+            <p class="modalText" style="color:#E74D7B;"> <br><br>Adu-Aryee <br> Family</p>
+        </div>
+    </section>
+
+    <div id="paginationDots" style="text-align: center; margin-top: -100px;"></div>
+
+
       </div>
     </div>
     <?php
@@ -229,6 +270,7 @@ The God you served so well will look after you. </div>
   </div>
   <!-- .container End -->
 </section>
+
 
 
 
@@ -425,9 +467,9 @@ The God you served so well will look after you. </div>
 
 
     <!-- Footer Scripts ============================================= -->
-    <script src="JS/jquery-3.3.1.min.js"></script>
-    <script src="JS/plugins.js"></script>
-    <script src="JS/functions.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/functions.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-89540131-1"></script>
     <script>
@@ -482,6 +524,96 @@ document.getElementById('help_ambulance').addEventListener('click', function() {
         });
 </script>
 
+<script>
+  // JavaScript function to open PDF based on modal card clicked
+  function openPDF(pdfName) {
+    window.open(pdfName, '_blank');
+  }
+</script>
+
+<script>
+  // Modal cards data
+const modalCards = [
+    { imageSrc: "IMAGES/grandchildrenMain.png", text: "Grandchildren", pdf: "tributes/Tribute to Gran-Gram.pdf" },
+    { imageSrc: "IMAGES/campbell.png", text: "Campbell Grandnieces", pdf: "tributes/Auntie Otsoo_Tribute by Femi and Ranti.pdf" },
+    { imageSrc: "IMAGES/marie.png", text: "Marie O. Obumadjugo", pdf: "tributes/MEMORIES OF MAMIE ESTHER.pdf" },
+    { imageSrc: "IMAGES/genevieve.png", text: "Genevieve Apaloo", pdf: "tributes/Tribute Grandmamam (1).pdf" },
+    { imageSrc: "IMAGES/rk.png", text: "R.K. Apaloo", pdf: "tributes/A TRIBUTE IN MEMORY OF ESTHER KWATETSO APALOO (1).pdf" },
+    { imageSrc: "IMAGES/arafua.png", text: "Arafua A. Aning", pdf: "tributes/FAREWELL AUNTIE ESTHER By Arafua Aning.pdf" },
+    { imageSrc: "IMAGES/squareGranny.png",text: "Adu-Aryee Family", pdf: "tributes/TRIBUTE BY THE ADU.pdf" }
+];
+
+// Function to generate modal cards
+function generateModalCards(startIndex) {
+    const modalContainer = document.getElementById("modalContainer");
+    modalContainer.innerHTML = ""; // Clear previous content
+
+    const endIndex = Math.min(startIndex + 3, modalCards.length); // Calculate end index
+
+    for (let i = startIndex; i < endIndex; i++) {
+        const modalCardData = modalCards[i];
+        const modalCard = document.createElement("div");
+        modalCard.classList.add("modalCard");
+
+        if (modalCardData.imageSrc) {
+            const image = document.createElement("img");
+            image.classList.add("small_image");
+            image.src = modalCardData.imageSrc;
+            modalCard.appendChild(image);
+        }
+
+        const text = document.createElement("p");
+        text.classList.add("modalText");
+        text.style.color = "#E74D7B";
+        text.innerHTML = "<br><br>" + modalCardData.text;
+        modalCard.appendChild(text);
+
+        modalCard.onclick = function () {
+            openPDF(modalCardData.pdf);
+        };
+
+        modalContainer.appendChild(modalCard);
+    }
+}
+
+// Function to enable horizontal scrolling on smaller screens
+function enableHorizontalScrolling() {
+    const modalContainer = document.getElementById("modalContainer");
+    modalContainer.style.overflowX = "scroll";
+}
+if (window.innerWidth <= 758) {
+    enableHorizontalScrolling();
+}
+
+// Function to generate pagination dots
+function generatePaginationDots(currentPage) {
+    const paginationDots = document.getElementById("paginationDots");
+
+    if (window.innerWidth > 758) {
+        paginationDots.innerHTML = ""; // Clear previous dots
+
+        const numPages = Math.ceil(modalCards.length / 3);
+
+        for (let i = 1; i <= numPages; i++) {
+            const dot = document.createElement("span");
+            dot.innerHTML = i === currentPage ? " ● " : " ○ ";
+            dot.onclick = function () {
+                generateModalCards((i - 1) * 3);
+                generatePaginationDots(i);
+            };
+            paginationDots.appendChild(dot);
+        }
+    } else {
+        paginationDots.style.display = "none"; // Hide pagination dots on small screens
+    }
+}
+
+// Initial generation
+generateModalCards(0);
+generatePaginationDots(1);
+
+
+</script>
    
   </body>
 
